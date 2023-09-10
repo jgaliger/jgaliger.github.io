@@ -1,0 +1,15 @@
+body{
+    background-color:antiquewhite;
+}
+
+.italics{
+    font-style: italic;
+    text-align: center;
+}
+
+h1,h2,main,p,header,footer{
+text-align: center;
+}
+li{
+    text-align: left;
+}
