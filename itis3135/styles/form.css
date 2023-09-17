@@ -1,0 +1,32 @@
+input{
+    text-align: left;
+}
+
+
+body{
+    background-color:antiquewhite;
+}
+
+.color{
+ color:darkslategrey
+}
+
+div{
+    border-color: black;
+    border-bottom:5px;
+    border-style: solid;
+    border-top: 0;
+    border-right: 0;
+    border-left:0;
+}
+button{
+    background-color:darkblue;
+    color: aliceblue;
+}
+
+input{
+    color:darkslategray;
+    font-family: Verdana, sans-serif;
+    size: 10px;
+    background-color:honeydew;
+}

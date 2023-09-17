@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUSTIN GALIGER'S JOBLESS GERBIL || ITIS 3135 SITE</title>
+    <link rel="stylesheet" href="styles/form.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Justin Galiger's Jobless Gerbil || ITIS 3135</h1>
+        <nav>
+                <a href="./">Home</a> ||
+                <a href="introduction.html">Introduction</a> ||
+                <a href="contract.html">Contract</a> ||
+                <a href="/">UNCC Page</a> ||
+                <a href="tables.html">Tables</a> ||
+                <a href="form.html">Form</a>
+        </nav>
+    </header>
+    <main>
+        <h2>ITIS 3135 Form</h2>
+       <form action="form.html" method="post">
+            <fieldset class="color">
+                <div class="border">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="number">Phone Number: </label>
+                <input type="tel" id="number" name="number"><br>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email"><br><br>
+            </div>
+            <div>
+                <label>Do you have more than one cat? </label><br>
+                <input type="checkbox" id="1" name="checkbox1">
+                <label for="1">Yes</label><br>
+                <input type="checkbox" id="2" name="checkbox2">
+                <label for="2">No</label><br>
+                <input type="checkbox" id="3" name="chceckbox3">
+                <label for="3">I have no cat because I am weird</label><br><br>
+            </div>
+            <div>
+                <label>Do you like cats or dogs better?</label><br>
+                <label for="Cats">Cats</label>
+                <input type="radio" id="Cats" name="cat" value="cat"><br>
+                <label for="Dogs">Dogs</label>
+                <input type="radio" id="Dogs" name="dog" value="dog"><br><br>
+                
+            </div>
+                <label for="cats">Select your favorite type of cat:</label><br>
+                <select id="cats" name="cats">
+                    <option value="1">Hairless</option>
+                    <option value="2">Calico</option>
+                    <option value="3">Black</option>
+                    <option value="4">Orange</option>
+                    </select><br><br><br><br>
+                
+                    <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+
+            </fieldset>
+       </form>
+            
+    </main>
+</body>
+</html>
