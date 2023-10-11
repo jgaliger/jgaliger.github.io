@@ -1,3 +1,11 @@
+
+function currentDate(){
+const currentDate = new Date();
+const day = date.getDate();
+const month = date.getMonth();
+const year = date.getFullYear();
+consoleLog(currentDate);
+}
 function scriptTest(){
-    alert("Script works");
+    alert("Scritp run")
 }

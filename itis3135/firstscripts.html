@@ -5,13 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
     <main>
+        <script src="scripts/defaultscripts.js"></script>
         <header>
-            First Scripts Page
+            <nav>
+                <a href="./">Home</a> ||
+                <a href="introduction.html">Introduction</a> ||
+                <a href="contract.html">Contract</a> ||
+                <a href="/">UNCC Page</a> ||
+                <a href="tables.html">Tables</a> ||
+                <a href="form.html">Form</a> ||
+                <a href="website_evaluations.html">Website Evaluations</a>
+                <a href="firstscripts.html">Firstscripts</a>
+            </nav>
         </header>
-        <h3></h3>
+        <h2>ITIS 3135 Firstscripts</h2>
+        <h3 id="currentTime"></h3>
+        <button type="button" onclick="currentDate()">Try it</button>
+        <script>
+            var today =new Date();
+            document.write("<h1>Welcome to site</h1>")
+            document.write(alert.scriptTest())
+        </script>
+        
     </main>
 </body>
 </html>
