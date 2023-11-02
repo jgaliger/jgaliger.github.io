@@ -14,16 +14,41 @@
             <div data-include="components/header.html"></div>
         </header>
         <h2>ITIS 3135 Firstscripts</h2>
-        <h3 id="currentTime"></h3>
-        <button type="button" onclick="currentDate()">Try it</button>
+        <h3 id="currentTime"><button type="button" onclick="currentDate()">Try it</button></h3>
+
         
-        <script>
-            var today =new Date();
-            document.write("<h1>Welcome to site</h1>")
-            document.write(alert.scriptTest())
-        </script>
-        
+        <form id="greetingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+    
+            <label for="mood">What is your mood like today?</label>
+            <input type="text" id="mood" required><br>
+    
+            <input type="submit" value="Submit" onclick="greeting()"><br><br><br><br>
+        </form>
+        <form id="polygon">
+            <label for="polygonInput">Please enter your favorite number 1-10:</label>
+            <input type="number" id="polygonInput" min="-10" max="10" required><br>    
+            <input type="submit" value="Submit" onclick="polygon()"><br><br><br><br>
+        </form>
+        <form id="insultForm">
+            <label for="insult">Please roast our mascot:</label>
+            <input type="text" id="insultInput" required><br>
+            <button id="insultButton" onclick="insult()">Roast</button>
+        </form><br>
+        <button onclick="dailyAdvice()">Click here for extremely helpful advice!</button><br><br>
+        <form id="ageForm">
+            <label for="age">How old are you?</label>
+            <input type="number" id="ageInput" required><br>
+            <input type="submit" value="Submit" onclick="age()">
+        </form>
+        <p>Would you like to join our company?</p>
+        <button onclick="yes()">Yes</button>
+        <button onclick="no()">No</button>
     </main>
-    <script src="scripts/defaultscripts.js"></script>
+
+
 </body>
+<script src="scripts/defaultscripts.js"></script>
+<script src="scripts/HTMLInclude.js"></script>
 </html>

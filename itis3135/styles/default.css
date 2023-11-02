@@ -16,3 +16,8 @@ li{
 a{
     color:maroon;
 }
+
+
+@media (min-width: 576px){
+    
+};

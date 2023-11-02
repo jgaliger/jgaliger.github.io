@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO intro page</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<header><div data-include="components/header.html"></div></header>
+<body>
+    <main>
+    <h2>BYO Intro Page</h2>
+    <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+    <form id="introForm">
+        <label for="name">Please enter your name:</label>
+        <input type="text" id="name" required value="Justin Galiger"><br>
+        <label for="mascot">Please enter your mascot:</label>
+        <input type="text" id="mascot" value="Jobless Gerbil" required><br>
+        <label for="image">Image of yourself:</label>
+        <input type="file" id="image" required><br>
+        <label for="caption">Enter a caption for your image:</label>
+        <input type="text" id="caption" value="Walking on campus"><br>
+        <label for="personal">Enter your personal background:</label>
+        <input type="text" id="personal" value="I was born in Massachusets, however I ended up moving down to North Carolina within a year and have been living in Chapel Hill my whole life." required><br>
+        <label for="professional">Enter your professional background:</label>
+        <input type="text" id="professional" value="I have worked as a barback over the past few months, and before this I have worked in the restaurant business since sophomore year of high school." required><br>
+        <label for="academic">Enter your academic background:</label>
+        <input type="text" id="academic" required value="I am currently a Junior here at UNCC, and as of right now I am double majoring in Computer science and Japanese. I haven’t chosen a concentration yet but I am planning on choosing cybersecurity."><br>
+        <label for="background">Enter your background in web development:</label>
+        <input type="text" id="background" value="I have no experience with HTML or CSS." required><br>
+        <label for="platform">Enter your computer platform:</label>
+        <input type="text" id="platform" value="macOS" required><br>
+        <div id="courses[]">
+        <label for="courses[]">Please enter your courses:</label>
+        <button id="courses[]" onclick="addCourse()">Add Course</button><br>
+        </div>
+       <br> <label for="funny">Enter a funny fact about yourself:</label>
+        <input type="text" id="funny" required value="An interesting fact about me: My parents once tried to change my icloud passcode to a randomly generated one because I would download apps without permission, but to get back at them I memorized the passcode and still use it to this day."><br>
+       <label for="anything">Anything else you would like to say about yourself?</label><br>
+       <input type="text" id="anything" value="Additional info"><br>
+        
+        <br><br><br><br><br>
+        <label for="checkbox">"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</label>
+        <input type="checkbox" required>
+        <br><br><br>
+        <input type="submit" value="submit" onclick="print()" >
+        <input type="reset" value="reset" onclick="reset()">
+    </form>
+    <div id="container"></div>
+</main>
+
+</body>
+
+<footer><div data-include="components/footer.html"></div></footer>
+<script src="scripts/HTMLInclude.js"></script>
+<script src="scripts/survey.js"></script>
+
+</html>
