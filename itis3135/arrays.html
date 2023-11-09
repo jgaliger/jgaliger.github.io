@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUSTIN GALIGER'S JOBLESS GERBIL || ITIS 3135 SITE</title>
+    <link rel="stylesheet" href="./styles/default.css">
+</head>
+<header>
+    <div data-include="components/header.html"></div>
+</header>
+<body>
+    <h1>Salary Array</h1>
+    <form id="salaryForm">
+        <label for="name">Employee Name:</label>
+        <input type="text" id="name" required>
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" required>
+        <button type="button" id="button">Add Salary</button>
+    </form>
+
+    <button type="button" id="displayResults" onclick=displayResults()>Display Results</button>
+    <button type="button" id="displaySalary" onclick=displaySalary()>Display Salary</button>
+</body>
+<footer><div data-include="components/footer.html"></div></footer>
+
+<script src="scripts/HTMLInclude.js"></script>
+</html>

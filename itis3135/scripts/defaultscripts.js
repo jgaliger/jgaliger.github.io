@@ -18,7 +18,7 @@ function greeting(){
 function polygon(){
   let polygonValue = document.getElementById("polygonInput").value;
   polygonValue = Math.abs(polygonValue);
-  polygonValue Math.round(polygonValue);
+  polygonValue = Math.round(polygonValue);
   const polygonNames = ["circle", "monogon", "digon", "triangle", "quadrilateral", "pentagon", "hexagon", "heptagon", "octagon", "enneagon", "decagon"];
   if (polygonValue >= 0 && polygonValue <= 10) {
     alert("Your favorite number corresponds to a "  + polygonNames[polygonValue] +".");

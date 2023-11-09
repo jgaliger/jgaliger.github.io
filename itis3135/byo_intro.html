@@ -12,7 +12,9 @@
     <main>
     <h2>BYO Intro Page</h2>
     <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+    <div id="data">
     <form id="introForm">
+
         <label for="name">Please enter your name:</label>
         <input type="text" id="name" required value="Justin Galiger"><br>
         <label for="mascot">Please enter your mascot:</label>
@@ -44,10 +46,11 @@
         <label for="checkbox">"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</label>
         <input type="checkbox" required>
         <br><br><br>
-        <input type="submit" value="submit" onclick="print()" >
+        <input type="submit" value="submit" >
         <input type="reset" value="reset" onclick="reset()">
     </form>
-    <div id="container"></div>
+</div>
+    <div class="result"></div>
 </main>
 
 </body>
