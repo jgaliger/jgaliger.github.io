@@ -1,17 +1,24 @@
 
 function currentDate(){
+  const time = document.getElementById('currentTime');
 var currentDate = new Date();
 var day = currentDate.getDate();
 var month = currentDate.getMonth();
 var year = currentDate.getFullYear();
-alert(currentDate);
-}
+const h1 = document.createElement('h1');
+h1.textContent = currentDate;
+time.appendChild(h1);
 
+}
+currentDate();
 function greeting(){
+    const courseForm = document.getElementById('greetingForm')
     var name = document.getElementById("name");
     var mood = document.getElementById("mood");
     var welcome ="The Jobless Gerbil welcomes you, " + name.value + "! We're glad you're doing "+mood.value +"!";
-    alert(welcome);
+    const h3 = document.createElement('h3');
+    h3.textContent = welcome;
+    courseForm.appendChild(h3);
 }
 
 

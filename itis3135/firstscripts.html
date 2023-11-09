@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Firstscripts</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
             <div data-include="components/header.html"></div>
         </header>
         <h2>ITIS 3135 Firstscripts</h2>
-        <h3 id="currentTime"><button type="button" onclick="currentDate()">Try it</button></h3>
+        <div id="currentTime"></div>
 
         
         <form id="greetingForm">
@@ -24,7 +24,7 @@
             <label for="mood">What is your mood like today?</label>
             <input type="text" id="mood" required><br>
     
-            <input type="submit" value="Submit" onclick="greeting()"><br><br><br><br>
+            <input id="greetingForm" type="submit" value="Submit" onclick="greeting()"><br><br><br><br>
         </form>
         <form id="polygon">
             <label for="polygonInput">Please enter your favorite number 1-10:</label>
