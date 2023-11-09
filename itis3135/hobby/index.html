@@ -161,4 +161,15 @@
 
     
 </style>
+<script>
+    const sections = document.querySelectorAll('section');
+    sections[0].style.display = 'block';
+
+    document.querySelector('nav').addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+            sections.forEach((section) => (section.style.display = 'none'));
+            document.querySelector(event.target.getAttribute('href')).style.display = 'block';
+        }
+    });
+</script>
 </html>
