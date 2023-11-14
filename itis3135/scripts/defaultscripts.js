@@ -12,7 +12,7 @@ time.appendChild(h1);
 }
 currentDate();
 function greeting(){
-    const courseForm = document.getElementById('greetingForm')
+    const courseForm = document.getElementById('greeting')
     var name = document.getElementById("name");
     var mood = document.getElementById("mood");
     var welcome ="The Jobless Gerbil welcomes you, " + name.value + "! We're glad you're doing "+mood.value +"!";
@@ -23,12 +23,16 @@ function greeting(){
 
 
 function polygon(){
+  const polygonHolder = document.getElementById('polygonDiv')
+  
   let polygonValue = document.getElementById("polygonInput").value;
   polygonValue = Math.abs(polygonValue);
   polygonValue = Math.round(polygonValue);
   const polygonNames = ["circle", "monogon", "digon", "triangle", "quadrilateral", "pentagon", "hexagon", "heptagon", "octagon", "enneagon", "decagon"];
-  if (polygonValue >= 0 && polygonValue <= 10) {
-    alert("Your favorite number corresponds to a "  + polygonNames[polygonValue] +".");
+  const h3 = document.createElement('h3');
+   if (polygonValue >= 0 && polygonValue <= 10) {
+    h3.textContent = "Your favorite number corresponds to a "  + polygonNames[polygonValue] +".";
+    polygonHolder.appendChild(h3); 
 } else {
     alert("Please enter a valid number between 0 and 10.");
 }

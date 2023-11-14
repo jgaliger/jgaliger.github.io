@@ -23,14 +23,17 @@
     
             <label for="mood">What is your mood like today?</label>
             <input type="text" id="mood" required><br>
+
     
             <input id="greetingForm" type="submit" value="Submit" onclick="greeting()"><br><br><br><br>
         </form>
+        <div id="greeting"></div>
         <form id="polygon">
             <label for="polygonInput">Please enter your favorite number 1-10:</label>
             <input type="number" id="polygonInput" min="-10" max="10" required><br>    
             <input type="submit" value="Submit" onclick="polygon()"><br><br><br><br>
         </form>
+        <div id="polygonDiv"></div>
         <form id="insultForm">
             <label for="insult">Please roast our mascot:</label>
             <input type="text" id="insultInput" required><br>
