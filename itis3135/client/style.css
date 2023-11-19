@@ -1,6 +1,13 @@
 body{
-    background-color:green;
+    background-color:#c0b9dd;
+    color:#ded9e2;
 }
-nav,h1{
+nav,h1,p{
     text-align:center;
+}
+a{
+    color:darkblue;
+}
+h1{
+    border:5rem;
 }

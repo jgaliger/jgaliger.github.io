@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
  let person =[];
  let counter = 0;
  function addSalary(){
-        const name = document.getElementById('name').value;
-        const salary = document.getElementById('salary').value;
+        const name = document.getElementById('name');
+        const salary = document.getElementById('salary');
         if (name === '' || isNaN(salary)) {
             alert('Please enter valid values for name and salary.');
             return;
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
  }
 
 function displaySalary(){
-    const tableBody = document.querySelector('#resultsTable');
+    const tableBody = document.getElementById('resultsTable');
             tableBody.innerHTML = '';
 
     for(let i=0; i<person.length;i++){
