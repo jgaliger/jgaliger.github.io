@@ -21,14 +21,14 @@
         <input type="text" id="name" required autofocus>
         <label for="salary">Salary:</label>
         <input type="number" id="salary" required>
-        <input id="salaryForm" type="submit" value="Add Salary" onclick="addSalary()">
     </form>
+    <button id="salaryForm" onclick="addSalary()">Add Salary</button>
     <input type="submit" value="Display Results" onclick="displayResults()">
     <input type="submit" value="Display Salary" onclick="displaySalary()">
 
     <div id="results"></div>
 
-    <table id="salaryTable">
+    <table border="5" id="salaryTable">
         <thead>
             <tr>
                 <th>Name</th>

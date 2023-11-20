@@ -5,13 +5,11 @@ let counter = 0;
  function addSalary(){
         const name = document.getElementById('name').value;
         const salary = document.getElementById('salary').value;
-        if (name === '' || isNaN(salary)) {
-            alert('Please enter valid values for name and salary.');
-            return;
-        }
         salaries[counter] = parseFloat(salary);
         person[counter] = name;
         counter++;
+        alert(salary);
+        alert(name);
  }
 
 function displayResults(){
@@ -29,7 +27,7 @@ function displayResults(){
 
 
 function displaySalary(){
-   const tableBody = document.getElementById('salaryTable');
+   const tableBody = document.getElementById('resultBody');
            tableBody.innerHTML = '';
 
    for(let i=0; i<person.length;i++){
