@@ -8,8 +8,6 @@ let counter = 0;
         salaries[counter] = parseFloat(salary);
         person[counter] = name;
         counter++;
-        alert(salary);
-        alert(name);
  }
 
 function displayResults(){

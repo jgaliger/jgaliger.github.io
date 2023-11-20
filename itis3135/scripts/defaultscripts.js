@@ -1,6 +1,6 @@
 
 function currentDate(){
-  const time = document.getElementById('currentTime');
+const time = document.getElementById('currentTime');
 var currentDate = new Date();
 var day = currentDate.getDate();
 var month = currentDate.getMonth();
@@ -39,29 +39,55 @@ function polygon(){
 }
 
 function insult(){
-    var insult1 = document.getElementById("insultInput");
+  const insultHolder = document.getElementById('insultDiv');
+    var insult1 = document.getElementById("insult");
     var message="Why would you ever say " + insult1.value + "??? You're terrible!";
-    alert(message);
+   const h3 = document.createElement('h3');
+   h3.textContent= message;
+   insultHolder.appendChild(h3);
 }
 function dailyAdvice(){
-  alert("Join our company or you will be homeless very soon.");
+  const adviceHolder = document.getElementById('adviceDiv'); 
+  const message = "Join our company or you will be homeless very soon.";
+  const h3 = document.createElement('h3');
+  h3.textContent= message;
+  adviceHolder.appendChild(h3);
 }
 
 function age(){
-  var age = document.getElementById("ageInput").value;
-  if(age<=12){
-    alert("You are a child, we have no need for you in our company.");
-  }
-  else if(age>12 && age<70){
-    alert("Please join our comany!!!");
-  }
-  else{
-    alert("Do you even know how to use a computer???");
-  }
+  const ageHolder = document.getElementById('ageDiv');
+  var age = document.getElementById('age').value;
+  const h3 = document.createElement('h3');
+  let message = "";
+    if(age<=12){
+      message ="You are a child, we have no need for you in our company.";
+      h3.textContent= message;
+      ageHolder.appendChild(h3);
+    }
+    else if(age>12 && age<70){
+      message = "Please join our comany!!!";
+      h3.textContent= message;
+      ageHolder.appendChild(h3);
+    }
+    else{
+      message = "Do you even know how to use a computer???";
+      h3.textContent= message;
+      ageHolder.appendChild(h3);
+    }
 }
 function yes(){
-  alert("Awesome! Welcome to the company!");
+  const holder = document.getElementById('answerDiv');
+  const h3 = document.createElement('h3');
+  let message = "";
+  message = "Awesome! Welcome to the company!";
+  h3.textContent= message;
+  holder.appendChild(h3);
 }
 function no(){
-  alert("I hope your car crashes on the way home.")
+  const holder = document.getElementById('answerDiv');
+  const h3 = document.createElement('h3');
+  let message = "";
+  message = "I hope your car crashes on the way home.";
+  h3.textContent= message;
+  holder.appendChild(h3);
 }

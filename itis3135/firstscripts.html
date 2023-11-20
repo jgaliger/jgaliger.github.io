@@ -15,40 +15,45 @@
         </header>
         <h2>ITIS 3135 Firstscripts</h2>
         <div id="currentTime"></div>
-
-        
         <form id="greetingForm">
             <label for="name">Name:</label>
             <input type="text" id="name" required><br>
     
             <label for="mood">What is your mood like today?</label>
             <input type="text" id="mood" required><br>
-
-    
-            <input id="greetingForm" type="submit" value="Submit" onclick="greeting()"><br><br><br><br>
         </form>
+        <Button id="greetingForm" onclick="greeting()">Submit</Button><br><br><br><br>     
         <div id="greeting"></div>
+        
         <form id="polygon">
             <label for="polygonInput">Please enter your favorite number 1-10:</label>
-            <input type="number" id="polygonInput" min="-10" max="10" required><br>    
-            <input type="submit" value="Submit" onclick="polygon()"><br><br><br><br>
+            <input type="number" id="polygonInput" min="-10" max="10" required><br>      
         </form>
+        <Button id="polygon" onclick="polygon()">Submit</Button><br><br><br><br>
         <div id="polygonDiv"></div>
+
         <form id="insultForm">
             <label for="insult">Please roast our mascot:</label>
-            <input type="text" id="insultInput" required><br>
-            <button id="insultButton" onclick="insult()">Roast</button>
+            <input type="text" id="insult" required><br>
         </form><br>
+        <button id="insultForm" type="text" onclick="insult()">Roast</button>
         <div id="insultDiv"></div>
+
         <button onclick="dailyAdvice()">Click here for extremely helpful advice!</button><br><br>
+        <div id ="adviceDiv"></div>
+        
         <form id="ageForm">
             <label for="age">How old are you?</label>
-            <input type="number" id="ageInput" required><br>
-            <input type="submit" value="Submit" onclick="age()">
+            <input type="number" id="age" required><br>
+            
         </form>
+        <Button id="ageForm" value="Submit" onclick="age()">Submit</Button>
+        <div id="ageDiv"></div>
+
         <p>Would you like to join our company?</p>
         <button onclick="yes()">Yes</button>
         <button onclick="no()">No</button>
+        <div id="answerDiv"></div>
     </main>
 
 
