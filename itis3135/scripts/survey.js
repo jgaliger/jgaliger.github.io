@@ -13,13 +13,15 @@ function addCourse() {
     const button = document.createElement('button');
     button.textContent = '+';
     button.addEventListener('click', addCourse);
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
     const br = document.createElement('br');
-
+    
     courseList.appendChild(courseInput);
     courseList.appendChild(button);
         courseList.appendChild(br);
-   
-}
+   }
+
     addEventListener('DOMContentLoaded',function(event){
         const introForm = document.getElementById('introForm');
         const introContent = document.getElementById('data');
@@ -40,19 +42,21 @@ function addCourse() {
         const anything = document.getElementById('anything').value
     
         const newForm = 
-        <h2>Name: ${name}</h2>;
-        <h2>Mascot: ${mascot}</h2>;
-        <h2>Image: <img src="${image}" alt="Image"></img></h2>;
-        <figcaption>${imageCaption}</figcaption>;
-        <p>Personal Background: ${personal}</p>;
-        <p>Academic Background: ${academic}</p>;
-        <p>Background in Web Development: ${background}</p>;
-        <h4>Platform: ${platform}</h4>;
-        <p>Courses: ${Array.from(courses).map(course => course.value).join(', ')}</p>;
-        <p>Funny thing about yourself: ${funny}</p>;
-        <p>Something else about yourself: ${anything}</p>;
+        
+        `<h2>Name: ${name}</h2>
+        <h2>Mascot: ${mascot}</h2>
+        <h2>Image: <img src="${image}" alt="Image"></img></h2>
+        <figcaption>${imageCaption}</figcaption>
+        <p>Personal Background: ${personal}</p>
+        <p>Academic Background: ${academic}</p>
+        <p>Background in Web Development: ${background}</p>
+        <h4>Platform: ${platform}</h4>
+        <p>Courses: ${Array.from(courses).map(course => course.value).join(', ')}</p>
+        <p>Funny thing about yourself: ${funny}</p>
+        <p>Something else about yourself: ${anything}</p>`
 
-        introContent.innerHTML = newForm;
+        const resultsDiv = document.getElementById('result');
+        resultsDiv.innerHTML = newForm;
       });
     });
 

@@ -7,8 +7,8 @@
     <title>BYO intro page</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
-<header><div data-include="components/header.html"></div></header>
 <body>
+    <header><div data-include="components/header.html"></div></header>
     <main>
     <h2>BYO Intro Page</h2>
     <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
@@ -35,19 +35,21 @@
         <input type="text" id="platform" value="macOS" required><br>
         <div id="courses[]">
         <label for="courses[]">Please enter your courses:</label>
-        <button id="courses[]" onclick="addCourse()">Add Course</button><br>
         </div>
-       <br> <label for="funny">Enter a funny fact about yourself:</label>
+        <button id="courses[]" onclick="addCourse()">Add Course</button><br>
+       <br><label for="funny">Enter a funny fact about yourself:</label>
         <input type="text" id="funny" required value="An interesting fact about me: My parents once tried to change my icloud passcode to a randomly generated one because I would download apps without permission, but to get back at them I memorized the passcode and still use it to this day."><br>
        <label for="anything">Anything else you would like to say about yourself?</label><br>
        <input type="text" id="anything" value="Additional info"><br>
-        
+
+       
         <br><br><br><br><br>
+
         <label for="checkbox">"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</label>
         <input type="checkbox" required>
         <br><br><br>
-        <input type="submit" value="submit" >
-        <input type="reset" value="reset" onclick="reset()">
+        <input type="submit" value="Submit" onclick="submit()">
+        <input type="reset" value="Reset" onclick="reset()">
     </form>
 </div>
     <div id="result"></div>
