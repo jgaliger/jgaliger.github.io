@@ -4,6 +4,7 @@ function reset() {
 function required(event) {
     event.preventDefault(); 
 }
+
 function addCourse() {
     const courseList = document.getElementById('courses[]');
     const courseInput = document.createElement('input');
