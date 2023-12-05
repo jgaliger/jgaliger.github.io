@@ -5,6 +5,8 @@ function required(event) {
     event.preventDefault(); 
 }
 
+let courseArr = [];
+
 function addCourse() {
     const courseList = document.getElementById('courses[]');
     const courseInput = document.createElement('input');
