@@ -14,15 +14,19 @@ function addCourse() {
     courseInput.name = 'courses[]';
 
     const button = document.createElement('button');
-    button.textContent = '+';
-    button.addEventListener('click', addCourse);
+    button.textContent = '-';
+    button.addEventListener('click', deleteCourse);
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
     const br = document.createElement('br');
     
     courseList.appendChild(courseInput);
     courseList.appendChild(button);
-        courseList.appendChild(br);
+    courseList.appendChild(br);
+        function deleteCourse(){
+            courseList.removeChild(courseInput);
+            courseList.removeChild(button);
+        }
    }
 
     addEventListener('DOMContentLoaded',function(event){
