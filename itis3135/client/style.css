@@ -39,3 +39,15 @@ footer{
     text-align: center;
     color:rgb(167, 51, 51);
 }
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
