@@ -9,6 +9,7 @@ function required(event) {
 }
 
 function submit(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
 
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -29,8 +30,4 @@ function submit(event) {
     resultDiv.innerHTML = `<h3>Welcome, ${name}! We will attempt to get back to you as soon as possible!</h3>`;
 }
 
-addEventListener('DOMContentLoaded', function (event) {
 
-    const data = document.getElementById('data');
-    const introForm = document.getElementById('introForm')
-});
