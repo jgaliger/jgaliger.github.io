@@ -25,12 +25,12 @@
 </header>
     <body>
         <main>
-            <h3>Informtation Form</h3>
+            <h3>Information Form</h3>
             
             <p>If you have a property that wou would like to rent within the triangle area, please feel free to enter your information below, along with a certain area you may be looking at. If you are just looking for a rental analysis to help you plan out managing a rental property, click the checkbox for rental analysis.</p> <br>
 
             <h4>Form</h4>
-           
+           <div id="data" class="center">
             <form id="introForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" placeholder="ex: Justin Galiger" required><br><br><br>
@@ -42,13 +42,10 @@
                 <label for="address">Address:</label>
                 <input type="url" id="address" placeholder="33 Placeholder St" required><br><br><br>
                 <label for="area">Area:</label>
-                <input type="text" id="area" placeholder="Chapel Hill" required>
+                <input type="text" id="area" placeholder="Chapel Hill" required><br><br><br>
+                <label for="check">Rental advice:</label>
+               <input type="checkbox" id="check"><br>
             </form>
-            <br>
-            <br>
-            <div class="center">
-            <label for="check">Rental advice:</label>
-            <input type="checkbox" id="check"><br>
             <input type="submit" value="Submit" onclick="submit()">
             <input type="reset" value="Reset" onclick="reset()">
             </div>
