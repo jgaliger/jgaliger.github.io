@@ -31,27 +31,29 @@
 
             <h4>Form</h4>
            
-            <form id="infoForm">
+            <form id="introForm">
                 <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="ex: Justin Galiger"><br><br><br>
+                <input type="text" id="name" placeholder="ex: Justin Galiger" required><br><br><br>
                 <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="jgaliger3@gmail.com"><br>
+                <input type="email" id="email" placeholder="jgaliger3@gmail.com" required><br>
                 <br><br>
                 <label for="number">Phone:</label>
-                <input type="tel" id ="number" placeholder="999-000-9090"><br><br><br>
+                <input type="tel" id ="number" placeholder="999-000-9090" required><br><br><br>
                 <label for="address">Address:</label>
-                <input type="url" id="address" placeholder="33 Placeholder St"><br><br><br>
+                <input type="url" id="address" placeholder="33 Placeholder St" required><br><br><br>
                 <label for="area">Area:</label>
-                <input type="text" id="area" placeholder="Chapel Hill">
+                <input type="text" id="area" placeholder="Chapel Hill" required>
             </form>
             <br>
             <br>
             <div class="center">
-            <label  for="check">Rental advice:</label>
+            <label for="check">Rental advice:</label>
             <input type="checkbox" id="check"><br>
             <input type="submit" value="Submit" onclick="submit()">
             <input type="reset" value="Reset" onclick="reset()">
+            </div>
                 <div class="resultDiv"></div>
+
         </main>
     </body>
 

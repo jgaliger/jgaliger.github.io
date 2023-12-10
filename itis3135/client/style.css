@@ -44,10 +44,12 @@ footer{
     width: 48%;
     padding: 5px;
   }
-  
-  /* Clear floats after image containers */
   .row::after {
     content: "";
     clear: both;
     display: table;
+  }
+  .size{
+    width:30%;
+    height:30%;
   }

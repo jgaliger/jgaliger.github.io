@@ -1,7 +1,17 @@
 let rentArr = [];
 let adviceArr = [];
 
+function reset() {
+    document.getElementById("introForm").reset();
+}
+function required(event) {
+    event.preventDefault(); 
+}
+
 function submit(){
+    addEventListener('DOMContentLoaded',function(event){
+    const introForm = document.getElementById('introForm');
+    const introContent = document.getElementById('data');
     const name = document.getElementById('name')
     const email = document.getElementById('email')
     const phone = document.getElementById('phone')
@@ -17,5 +27,6 @@ function submit(){
         rentArr.push(person)
     }
     const result = document.getElementById('resultDiv')
-    resultDiv.innerHTML = `<h3>Welcome, ${name}! We will attempt to get back to you as soon as possible!</h3>`
+    resultDiv.innerHTML = `<h3>Welcome, ${name}! We will attempt to get back to you as soon as possible!</h3>`;
+});
 }
